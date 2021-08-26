@@ -1,0 +1,63 @@
+Storing results temporarily
+Sometimes, calculators need to store results temporarily between operations.
+Think of when users accidentally clear an operation, 
+but might want the value of the last result.
+How would you implement this?
+You need a way to store the output of every operation you perform.
+
+Private variables
+Private variables are class members that hold data but 
+are not exposed outside the class boundary.
+In your case, you need to store the result of every operation that is performed.
+
+GETTER SETTER
+
+At this point, we have a class with a private variable and operations that store its result in it.
+But we need a way for things that exist outside the class boundary to access this result.
+For example, for displaying it.
+
+To do so, we will create a "getter" method.
+A getter method is called so simply because it returns the value 
+of the variable and is normally prefixed with “get”.
+A “setter” method simply does the opposite, it allows the value of the 
+variable to be changed by passing parameters.
+For example:
+
+public int getResult() {
+    return result;
+}
+
+public void setResult(int value) {
+    this.result = value;
+}
+
+************************
+But what about setters?
+
+Won’t introducing a setter mean something from outside the class 
+boundary be able to do the same through calc.setResult(-1)?
+Good observation. But the difference is, unlike the case of the public variable,
+the setter method offers one very significant advantage - control.
+With the setter method, you can introduce logic before accepting 
+the value for the result. For example:
+*****SETTER METHOD ISSUE SOLVED******
+public void setResult(int value) {
+if (value != 0)
+return;
+this.result = value;
+}
+******************
+Getters and Setters form the cornerstone for a very 
+important concept In OOP called "Data hiding" and “Encapsulation”.
+
+***************
+Before we go ahead, make sure to tie in all of the above.
+You need to:
+Have a private result variable.
+Create getter and setter for that result variable.
+The setter must not allow any passed parameter to affect the result, except 0.
+The return types of the add and subtract methods must be void.
+The add and subtract operations must store the value of the operation in the result variable.
+
+
+

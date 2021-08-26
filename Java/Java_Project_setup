@@ -20,3 +20,30 @@ https://spring.io/
 
 Remember one rule of programming in Java: 
 The file name must be the same as the enclosing class name in the file.
+
+Q)What is the package statement at the top?
+-->The package statement is necessary every time you create a new class in Java.
+It is Java’s way to tell the compiler the location of the class you are creating. 
+So that is what the package statement does. 
+
+Q)What is a "package" itself?
+-->In simple terms, it is something that allows groups of related things in Java to exist together.
+The official definition is: "A package is a grouping of related types providing 
+access protection and name space management."
+
+Q)What does the "public" keyword do?
+-->The public keyword falls under a category of keywords called "access specifiers".
+They do allow visibility and access to the classes, functions etc that you create. 
+Why is this important?
+ Well, if you think of a class as a “blueprint” for something,
+then you would naturally want certain things to be accessible and certain things to be hidden.
+To take a real world parallel of a calculator, 
+do you know what is the manufacturer of the LED display used in your calculator?
+ That is hidden from you and is called “private”.
+  But you can see and operate buttons on the calculator which perform
+simple arithmetic - this is “public”
+
+https://docs.oracle.com/javase/tutorial/java/package/packages.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/classdecl.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html
