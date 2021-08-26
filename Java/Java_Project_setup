@@ -1,0 +1,22 @@
+Q)What is the Group Id?
+-->In the Java ecosystem, a group generally refers to the company, entity or a group of people 
+that is responsible for the project being created. The group id is a unique identifier 
+referring to this group.
+
+Q)What is an Artifact Id?
+-->In the Java ecosystem, an artifact refers to a project. Generally, it will take the form of 
+a JAR (Java Archive, think of it similar to a zip file) or a number of files. 
+To identify this project, we assign a string identifier
+for the artifact, and thus we get the artifact id.
+
+Q)What is Spring? What is Spring Boot?
+-->These are two very popular Java frameworks used to build applications. 
+They are popular in both small and enterprise scale companies as they enable developers
+to work with a lot of powerful functionality and also enable customization of this functionality
+quite easily.
+
+https://spring.io/projects/spring-boot
+https://spring.io/
+
+Remember one rule of programming in Java: 
+The file name must be the same as the enclosing class name in the file.
