@@ -1,0 +1,36 @@
+Q)What are Exceptions?
+-->Exceptions are objects that describe abnormal flows of execution in the program. 
+These are objects and can be "thrown". A program can then decide whether to handle them or not.
+
+https://docs.oracle.com/javase/tutorial/essential/exceptions/definition.html
+
+public void add(int a, int b) {
+    long temp = (long) a + (long) b;
+    if (temp > Integer.MAX_VALUE)
+        throw new ArithmeticException();
+    result = a + b;
+
+}
+What is the value of Integer.MAX_VALUE?
+-->2^31 - 1
+
+Java Stacktrace
+-->A stacktrace helps you by showing the sequence of calls made in the program execution. 
+Since exceptions are abnormal flows of program execution, this is useful in debugging.
+While stack traces can be intimidating when you first see them,
+reading through them might help get you halfway through the debugging problems with your code.
+The top-most line in a stack trace gives quite a lot of information to start your debugging process:
+Exception name
+Error message
+Actual line number where the error occurred.
+Quite often, looking up portions of the error message on Google will
+narrow down your search significantly.
+Practice looking at stack traces and feel comfortable!
+
+Debugging means to run your code step by step in a debugging tool
+like Visual Studio, to find the exact point where you made a programming mistake.
+
+Step into - Go into the function and wait for the next action.
+Step over - Jump over the function without waiting again.
+Step out - If you are in the function, you will leave it without waiting again.
+Watch window-->to evaluate inside the watch window.Useful during function calls

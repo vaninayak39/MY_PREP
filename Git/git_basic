@@ -1,2 +1,40 @@
+Basic workflow in Git
+
+1.You modify files in your working directory
+2.You stage the files, adding snapshots of them to your staging area (git add file)
+3.You do a commit, which takes the files as they are in the staging area and stores 
+  that snapshot permanently to your local Git repository (git commit file)
+4.You push the changes from the local repository to the remote repository (git push)
+5.You pull the changes from the remote repository to the local repository (git pull)
+
+CREATE SSH KEYS
+ssh-keygen -t ed25519 -C "crio-git-byte"
+-t type of algo
+-C comment
+CHECK KEY
+cat ~/.ssh/id_ed25519.pub
+
+
+Specifies information for the comment field within the key file.
+Use quotation marks if the string includes spaces. 
+If you do not specify a comment when you create a key, 
+a default comment is created that includes the key type, creator, date, and time.
+
+MORE SSH COMMANDS:
+https://www.microfocus.com/documentation/reflection-desktop/16-2/rdesktop-guide/ssh-keygen_command_rf.htm
+
+GITHUB VS GITLAB
+https://www.upgrad.com/blog/github-vs-gitlab-difference-between-github-and-gitlab/
+
+SSH in linux
+https://docs.gitlab.com/ee/ssh/index.html
+
+GIT TUTORIAL
+
+https://www.atlassian.com/git/tutorials/using-branches
 https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository
 https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+
+Note: git add . -->only stages files in the current directory and not any subdirectories 
+whereas git add -A -->will stage files in subdirectories as well.
+https://stackabuse.com/git-add-all-files-to-a-repo/

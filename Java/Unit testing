@@ -1,0 +1,13 @@
+@Test
+void testAdd() {
+
+    StandardCalculator calc = new StandardCalculator();
+
+    calc.add(1, 1);
+
+    assertEquals(2, calc.getResult());
+
+}
+
+ASSERTS
+http://junit.sourceforge.net/javadoc/org/junit/Assert.html

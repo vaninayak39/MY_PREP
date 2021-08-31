@@ -1,0 +1,18 @@
+./gradlew clean -->Uses your project's gradle wrapper to execute your project's clean task. 
+Usually, this just means the deletion of the build directory.
+
+./gradlew clean assembleDebug-->Again, uses your project's gradle wrapper to execute the clean 
+and assembleDebug tasks, respectively. So, it will clean first, then execute 
+assembleDebug, after any non-up-to-date dependent tasks.
+
+
+You should use this one too:
+./gradlew :app:dependencies (Mac and Linux) -With ./
+gradlew :app:dependencies (Windows) -Without ./
+it removes build folder, as well configure your modules and then build your project.
+
+What does Gradle clean assemble do?
+clean will delete a build directory, all your classes will be removed for a fresh compile.
+assemble will create an archive (JAR) file from your Java project and will run all other tasks that require compile, test and so on.
+
+

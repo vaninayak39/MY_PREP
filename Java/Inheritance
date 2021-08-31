@@ -1,0 +1,28 @@
+Protected access specifier
+Take a look at the methods created in the standard calculator.
+You are storing the result of every operation in the result variable.
+But this result member variable has a private access specifier.
+As you know, the private access specifier prevents visibility outside the
+class boundary and this includes the child relationship of the extends keyword.
+
+How do you keep the functionality of the result variable that does not
+ grant visibility outside the class boundary while at the same 
+ time allowing child classes visibility into some of its parent class’ member variables?
+This is done using the protected variable, and this is the access specifier
+ the result variable must be given.
+
+Where must this change be made?
+
+It must be made in StandardCalculator.java. 
+The protected member variable in this class will then be inherited by the ScientificCalculator.
+
+Why is this change important?
+Look at the requirements in the objective once more.
+For any new methods that are created in the scientific calculator class,
+it too must have a result variable. We have two choices here:
+create a new private variable that is specific for the scientific calculator class,
+or you can simply use the language features to inherit the result variable in the parent class.
+
+Gradle is a build system (open source) which is used to automate building, testing, deployment etc
+
+./gradlew bootRun

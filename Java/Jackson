@@ -1,0 +1,21 @@
+What is JSON?
+Q)How will a Python application communicate with a SpringBoot server?
+-->They need a common language to convey information, right? 
+For this purpose there are standard formats like JSON, XML etc,made
+use of for transferring data across systems.
+
+JSON is a readable format with key-value pairs
+{
+    "symbol": "AAPL",
+    "quantity": 100,
+    "purchaseDate": "2019-01-02"
+}
+
+The keys have to be a String whereas values comes 
+from a much wider pool of objects like String, Integer, Boolean, Array, or even another JSON nesting
+
+deserialization-->Converting JSON to a Java object for processing is deserialization 
+serialization--> involves transforming the Java object to JSON.
+
+
+
